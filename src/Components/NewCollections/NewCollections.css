@@ -1,0 +1,45 @@
+/* Default styles */
+.newcollections {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.newcollections h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.newcollections hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #252525;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Media query for screens below 768px */
+@media screen and (max-width: 768px) {
+    .newcollections h1 {
+        font-size: 22px;
+        font-weight: 350;
+    } 
+
+    .newcollections hr {
+        width: 150px; /* Adjust hr width for smaller screens */
+    }
+
+    .collections {
+        grid-template-columns: 1fr; /* Change grid to 2 columns on smaller screens */
+        gap: 20px; /* Reduce gap between items for smaller screens */
+    }
+}

@@ -1,0 +1,54 @@
+.relatedproducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-height: 90vh; /* Use min-height instead of height */
+}
+
+.relatedproducts h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.relatedproducts hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    border: #252525;
+}
+
+.relatedproducts-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .relatedproducts h1 {
+        color: #171717;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .relatedproducts hr {
+        width: 80px;
+        height: 6px;
+        border-radius: 10px;
+        border: #252525;
+    }
+
+    .relatedproducts-item {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .relatedproducts {
+        min-height: 70vh; /* Adjusted min-height */
+        margin-bottom: 150px; /* Adjusted margin-bottom */
+    }
+}

@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.active{
+    color: #FF4141;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px -2px black;
+    padding: 16px;
+    margin: 10px;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p{
+    color: #171717;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap : 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #FF4141;
+}
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.nav-login-cart .profile{
+ font-size: 20px;
+ color: black;
+}
+
+.nav-login-cart button{
+    width: 157px;
+    height: 50px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: 515151;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.nav-login-cart button:active{
+    background-color: #f3f3f3;
+}
+
+.nav-login-cart .nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    background-color: red;
+    font-size: 14px;
+    color: white;
+}
+
+
+:root{
+    --mainColor: #29335C;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
+
+
+
+
+.navbar .nav-btn{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: var(black);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 3rem;
+    font-weight: 500;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0 1px 3px -2px black;
+        padding: 5px;
+    }
+
+    .nav-logo{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .nav-logo p{
+        color: #171717;
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+    .nav-login-cart{
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+
+    .nav-login-cart .profile{
+        font-size: 15px;
+        color: black;
+       }
+
+    .nav-login-cart button{
+        width: 70px;
+        height: 30px;
+        outline: none;
+        border: 1px solid #7a7a7a;
+        border-radius: 75px;
+        color: 515151;
+        font-size: 13px;
+        font-weight: 300;
+        background-color: white;
+        cursor: pointer;
+        margin-top: 12px;
+    }
+
+    .nav-login-cart .nav-cart-count{
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -35px;
+        margin-left: -28px;
+        border-radius: 11px;
+        background-color: red;
+        font-size: 14px;
+        color: white;
+    }
+
+    .navbar nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 40%;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #29335cc9;
+        transition: 1s;
+        transform: translateY(-100vh);
+        z-index: 100;
+    }
+
+    .navbar .responsive_nav{
+        transform: none;
+    }
+    
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    
+}

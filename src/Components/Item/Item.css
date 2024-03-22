@@ -1,0 +1,55 @@
+/* Default styles */
+.item {
+    width: 350px;
+}
+
+.item p {
+    margin: 6px 0px;
+    font-style:normal;
+}
+.item img{
+    border-radius: 5px;
+    transition: 1s linear ease-in-out;
+    background-color: aliceblue;
+}
+.item-prices {
+    display: flex;
+    gap: 30px;
+}
+
+.item-price-new {
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item-price-old {
+    color: #8c8c8c; /* Fixed typo in class name */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.item:hover {
+    transform: scale(1.05);
+   transition: 1s ease-in-out;
+}
+
+/* Media query for screens below 768px */
+@media screen and (max-width: 768px) {
+    .item {
+        width: 100%; /* Make item full width on smaller screens */
+    }
+
+    .item-prices {
+        flex-direction: column; /* Stack prices vertically */
+    }
+    .item img{
+        width: 300px;
+    }
+    .item p {
+        margin: 6px 6px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+}

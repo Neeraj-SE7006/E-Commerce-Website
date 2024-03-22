@@ -1,0 +1,83 @@
+/* Default styles */
+.newsletter {
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 30px;
+}
+
+.newsletter h1 {
+    color: #454545;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 20px;
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    max-width: 100%;
+    padding: 0 20px;
+    height: 70px;
+    border-radius: 80px;
+    border: 2px solid #e3e3e3;
+}
+
+.newsletter input {
+    width: calc(100% - 100px); /* Adjust input width for smaller screens */
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: poppins;
+    font-size: 16px;
+}
+
+.newsletter div button {
+    width: 120px; /* Adjust button width for smaller screens */
+    height: 50px; /* Adjust button height for smaller screens */
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media query for screens below 768px */
+@media screen and (max-width: 768px) {
+    .newsletter {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Change height to auto for content to adjust */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .newsletter h1 {
+        font-size: 36px; /* Reduce font size for smaller screens */
+    }
+
+    .newsletter div {
+        width: 100%; /* Adjust div width for smaller screens */
+    }
+
+    .newsletter input {
+        width: calc(100% - 80px); /* Adjust input width for smaller screens */
+    }
+
+    .newsletter div button {
+        width: 100px; /* Adjust button width for smaller screens */
+        height: 40px; /* Adjust button height for smaller screens */
+    }
+}
